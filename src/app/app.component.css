@@ -1,0 +1,156 @@
+:root {
+    --swiper-theme-color: #000;
+}
+/* 
+ 
+*/
+
+.menu-item-carousel{
+    background-image: url('https://p4.wallpaperbetter.com/wallpaper/998/858/468/wood-hd-backgrounds-wallpaper-preview.jpg');
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.title-swiper{  
+    text-align: left;
+    border: 1px solid #afafaf ;
+    padding: 10px;
+    transition: all .5s;
+    border-radius: 3px;
+    background-color: #e04544;
+}
+
+.title-swiper:hover{
+    border-color: aliceblue;
+}
+
+.title-swiper:hover h5{
+    color: antiquewhite;
+}
+
+.title-swiper h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.p-swiper-title{
+    color: aliceblue;
+}
+
+.icons-swiper {
+    margin-bottom: 9px;
+    height: 2.6em;
+    float: left;
+    margin-right: 0.938em;
+    margin-left: 0.7em;
+}
+/* 
+.center-swiper-title{
+    
+} */
+
+/* Margenes del Swiper */
+.margin-swiper{
+    margin-left: 1%;
+    margin-right:1%;
+}
+
+/* Altura Swiper */
+.height-swiper{
+    height: 380px;
+}
+
+/* Margenes de arriba Swiper */
+
+.swiper-margin-top{
+    margin-top: 0px;
+}
+
+/* -------------------------------------------- */
+/* CSS title-swiper */
+
+.height-swiper2{
+    height: 380px;
+}
+
+.title-swiper2{  
+    text-align: left;
+    border: 1px solid #afafaf ;
+    padding: 10px;
+    transition: all .5s;
+    border-radius: 3px;
+    background-color: aliceblue;
+}
+
+.title-swiper2:hover{
+    border-color: aliceblue;
+}
+
+.title-swiper2:hover h5{
+    color: #FFC93C;
+}
+
+.title-swiper2 h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.p-swiper-title2{
+    color: #000;
+}
+/* -------------------------------------------- */
+
+.menu-section{
+    /* Poner fondo de madera */
+    background-color: #e04544;
+    height: 300px;
+}
+
+/* -------------------------------------------- */
+
+/* TABLETS CSS  */
+
+@media only screen and (min-width: 700px) and (max-width: 915px){
+    .height-swiper{
+        height: 532px;           
+    }
+    .margin-swiper{
+        margin-left: 5%;
+        margin-right:5%;
+        
+    }
+    .swiper-margin-top{
+        margin-top: 30px;
+    }
+}
+
+/* PHONES CSS - */
+@media only screen and (min-width: 380px) and (max-width: 699px) {
+    .height-swiper{
+        height: 330px;
+    }
+    .swiper-margin-top{
+        margin-top: 20px;
+    }
+    .margin-swiper{
+        margin-left: 0px;
+        margin-right:0px;   
+    }
+
+}
+
+/* Other Phone CSS */
+@media (max-width: 379px) {
+
+    .height-swiper{
+        height: 330px;
+    }
+    
+    .swiper-margin-top{
+        margin-top: 20px;
+    }
+    .margin-swiper{
+        margin-left: 0px;
+        margin-right:0px;   
+    }
+}

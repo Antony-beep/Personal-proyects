@@ -23,6 +23,9 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/swiper/swiper.min.css",
+              "./node_modules/swiper/modules/navigation/navigation.min.css",
+              "./node_modules/swiper/modules/pagination/pagination.min.css",
               "src/assets/css/bootstrap.min.css",
               "src/assets/css/font-awesome.css",
               "src/assets/css/templatemo-klassy-cafe.css",
@@ -31,7 +34,6 @@
               "src/styles.css"
             ],
             "scripts": [
-              
               "src/assets/js/jquery-2.1.0.min.js",
               "src/assets/js/popper.js",
               "src/assets/js/bootstrap.min.js",

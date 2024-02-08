@@ -344,7 +344,6 @@ MY CUSTOM CSS
 }
 
 
-
 @keyframes tiembla{
   93%  { -webkit-transform:rotateZ(-5deg); }
   94% { -webkit-transform:rotateZ( 0deg) scale(.8); }
@@ -356,6 +355,7 @@ MY CUSTOM CSS
   100% { -webkit-transform:rotateZ( -5deg) }
   
 }
+
 
 /**
  * ----------------------------------------
@@ -1283,7 +1283,7 @@ chefs
   display: none;
 }
 
-#chefs .chef-item {
+#chefs .chef-item { 
   text-align: center;
   border: 1px solid #afafaf;
   padding: 5px;

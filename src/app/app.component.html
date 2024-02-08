@@ -19,7 +19,7 @@
                         <img src="../assets/images/klassy-logo.png" align="klassy cafe html template" class="imglogo2" >
                     </a>
                     
-                        <h6 class="personal">La Casa del Chef</h6>
+                        <h6 class="personal " >La Casa del Chef</h6>
                     
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
@@ -88,8 +88,8 @@
             <div class="col-lg-4">
                 <div class="left-content">
                     <div class="inner-content">
-                        <h4>La Casa del Chef</h4>
-                        <h6>COMPLEJO RECREACIONAL</h6>
+                        <h4 class="slide-in-fwd-left">La Casa del Chef</h4>
+                        <h6 >COMPLEJO RECREACIONAL</h6>
                         <div class="main-white-button scroll-to-section">
                             <a href="https://wa.me/51995039777?text=Hola%20,quiero%20reservar%20una%20mesa!"
                                target="_blank"
@@ -191,83 +191,184 @@
             </div>
         </div>
     </div>
-    <div class="menu-item-carousel">
-        <div class="col-lg-12">
-            <div class="owl-menu-item owl-carousel">
-                <div class="item">
-                    <div class='card card1'>
-                        <div class="price"><h6>$14</h6></div>
-                        <div class='info'>
-                          <h1 class='title'>Chocolate Cake</h1>
-                          <p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod teme.</p>
-                          <div class="main-text-button">
-                              <div class="scroll-to-section"><a href="#reservation">Make Reservation <i class="fa fa-angle-down"></i></a></div>
-                          </div>
-                        </div>
+    <div class="menu-item-carousel" >
+        <!-- <swiper 
+            [config]="config"
+            (slideChange)="onSlideChange()"
+            >
+            <ng-template swiperSlide *ngFor="let img of ImgSlides"><img 
+                [src]="img.src" 
+                alt=""
+                style="height: 400px;"
+                ></ng-template>
+        </swiper>   -->
+         <div class="row margin-swiper" >
+            <div class="col-lg-4" >
+                <swiper 
+                [config]="config"
+                (slideChange)="onSlideChange()"
+                >
+                    <ng-template swiperSlide *ngFor="let img of ImgSlides" ><img
+                        class="height-swiper" 
+                        [src]="img.src" 
+                        alt=""
+                        >
+                    </ng-template>
+               </swiper>    
+               <div class="title-swiper">
+                    <div class="center-swiper-title">
+                        <img src="../assets/images/billar.png" alt="" class="icons-swiper" >
+                        <h5 >Sala de juegos</h5>
+                        <p class="p-swiper-title">Entretente con nuestros juegos</p>
                     </div>
+                    
+               </div>
+                
+            </div>
+
+            <div class="col-lg-4 swiper-margin-top" >
+                <swiper 
+                [config]="config"
+                (slideChange)="onSlideChange()"
+                >
+                    <ng-template swiperSlide *ngFor="let img of ImgSlideJuegosA"><img 
+                        [src]="img.src" 
+                        alt=""
+                        class="height-swiper"
+                        >
+                    </ng-template>
+               </swiper>
+               <div class="title-swiper">
+                    <img src="../assets/images/ninos.png" alt="" class="icons-swiper" >
+                    <h5>Juegos al aire libre</h5>
+                    <p class="p-swiper-title">Juegos para adultos y niños</p>
+               </div>
+            </div>
+
+            <div class="col-lg-4 swiper-margin-top" >
+                <swiper 
+                [config]="config"
+                (slideChange)="onSlideChange()"
+                >
+                    <ng-template swiperSlide *ngFor="let img of ImgSlideLaguna"><img 
+                        [src]="img.src"     
+                        alt=""
+                        class="height-swiper"
+                        >
+                    </ng-template>
+               </swiper>
+               <div class="title-swiper">
+                <img src="../assets/images/lake.png" alt="" class="icons-swiper" >
+                <h5>Laguna del Chef</h5>
+                <p class="p-swiper-title">Botes a pedales para todos</p>
                 </div>
-                <div class="item">
-                    <div class='card card2'>
-                        <div class="price"><h6>$22</h6></div>
-                        <div class='info'>
-                          <h1 class='title'>Klassy Pancake</h1>
-                          <p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod teme.</p>
-                          <div class="main-text-button">
-                              <div class="scroll-to-section"><a href="#reservation">Make Reservation <i class="fa fa-angle-down"></i></a></div>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class='card card3'>
-                        <div class="price"><h6>$18</h6></div>
-                        <div class='info'>
-                          <h1 class='title'>Tall Klassy Bread</h1>
-                          <p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod teme.</p>
-                          <div class="main-text-button">
-                              <div class="scroll-to-section"><a href="#reservation">Make Reservation <i class="fa fa-angle-down"></i></a></div>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class='card card4'>
-                        <div class="price"><h6>$10</h6></div>
-                        <div class='info'>
-                          <h1 class='title'>Blueberry CheeseCake</h1>
-                          <p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod teme.</p>
-                          <div class="main-text-button">
-                              <div class="scroll-to-section"><a href="#reservation">Make Reservation <i class="fa fa-angle-down"></i></a></div>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class='card card5'>
-                        <div class="price"><h6>$8.50</h6></div>
-                        <div class='info'>
-                          <h1 class='title'>Klassy Cup Cake</h1>
-                          <p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod teme.</p>
-                          <div class="main-text-button">
-                              <div class="scroll-to-section"><a href="#reservation">Make Reservation <i class="fa fa-angle-down"></i></a></div>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class='card card3'>
-                        <div class="price"><h6>$7.25</h6></div>
-                        <div class='info'>
-                          <h1 class='title'>Klassic Cake</h1>
-                          <p class='description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedii do eiusmod teme.</p>
-                          <div class="main-text-button">
-                              <div class="scroll-to-section"><a href="#reservation">Make Reservation <i class="fa fa-angle-down"></i></a></div>
-                          </div>
-                        </div>
-                    </div>
+            </div>
+            
+           
+        </div>  
+       
+            
+        
+    </div>
+    
+    
+</section>
+
+<!-- --------------------------- -->
+<!--  -->
+<!-- Eventos  -->
+<!--  -->
+<!--  -->
+<section class="section" id="menu">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="section-heading">
+                    <h6>Servicios</h6>
+                    <h2>Más prestaciones a pedido</h2>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="menu-item-carousel" >
+
+         <div class="row margin-swiper" >
+            <div class="col-lg-4 swiper-margin-top" style="width: 200px;">
+                <swiper 
+                [config]="config"
+                (slideChange)="onSlideChange()"
+                >
+                    <ng-template swiperSlide *ngFor="let img of ImgSlideMatrimonio" ><img
+                        class="height-swiper2" 
+                        [src]="img.src" 
+                        alt=""
+                        >
+                    </ng-template>
+               </swiper>    
+               <div class="title-swiper2">
+                    <div class="center-swiper-title">
+                        <img src="../assets/images/couple.png" alt="" class="icons-swiper" >
+                        <h5 >Matrimonios</h5>
+                        <p class="p-swiper-title2">Ceremonias elegantes</p>
+                    </div>
+                    
+               </div>
+                
+            </div>
+
+            <div class="col-lg-4 swiper-margin-top" >
+                <swiper 
+                [config]="config"
+                (slideChange)="onSlideChange()"
+                >
+                    <ng-template swiperSlide *ngFor="let img of ImgSlideHospedaje"><img 
+                        [src]="img.src" 
+                        alt=""
+                        class="height-swiper2"
+                        >
+                    </ng-template>
+               </swiper>
+               <div class="title-swiper2">
+                    <img src="../assets/images/wood-house.png" alt="" class="icons-swiper" >
+                    <h5>Hospedaje</h5>
+                    <p class="p-swiper-title2">Cavaña rústica en la naturaleza</p>
+               </div>
+            </div>
+
+            <div class="col-lg-4 swiper-margin-top" >
+                <swiper 
+                [config]="config"
+                (slideChange)="onSlideChange()"
+                >
+                    <ng-template swiperSlide *ngFor="let img of ImgSlideEvento"><img 
+                        [src]="img.src"     
+                        alt=""
+                        class="height-swiper2"
+                        >
+                    </ng-template>
+               </swiper>
+               <div class="title-swiper2">
+                <img src="../assets/images/celebracion.png" alt="" class="icons-swiper" >
+                <h5>Aniversarios ,15 años y más</h5>
+                <p class="p-swiper-title2">Eventos de todo tipo</p>
+                </div>
+            </div>
+            
+            
+        </div>  
+       
+            
+        
+    </div>
+    
+    
+</section>
+<!-- Eventos Fin -->
+
+    
+<section>
+    <div class="menu-section">
+
     </div>
 </section>
 <!-- ***** Menu Area Ends ***** -->
@@ -278,8 +379,8 @@
         <div class="row">
             <div class="col-lg-4 offset-lg-4 text-center">
                 <div class="section-heading">
-                    <h6>Our Chefs</h6>
-                    <h2>We offer the best ingredients for you</h2>
+                    <h6>Mejores chefs</h6>
+                    <h2>Parte de lo mejor</h2>
                 </div>
             </div>
         </div>
@@ -296,8 +397,8 @@
                         <img src="../assets/images/chefs-01.jpg" alt="Chef #1">
                     </div>
                     <div class="down-content">
-                        <h4>Randy Walker</h4>
-                        <span>Pastry Chef</span>
+                        <h4></h4>
+                        <span></span>
                     </div>
                 </div>
             </div>
@@ -313,8 +414,8 @@
                         <img src="../assets/images/chefs-02.jpg" alt="Chef #2">
                     </div>
                     <div class="down-content">
-                        <h4>David Martin</h4>
-                        <span>Cookie Chef</span>
+                        <h4>h4</h4>
+                        <span>s</span>
                     </div>
                 </div>
             </div>
@@ -330,8 +431,8 @@
                         <img src="../assets/images/chefs-03.jpg" alt="Chef #3">
                     </div>
                     <div class="down-content">
-                        <h4>Peter Perkson</h4>
-                        <span>Pancake Chef</span>
+                        <h4>P</h4>
+                        <span>P</span>
                     </div>
                 </div>
             </div>
@@ -348,23 +449,23 @@
             <div class="col-lg-6 align-self-center">
                 <div class="left-text-content">
                     <div class="section-heading">
-                        <h6>Contact Us</h6>
-                        <h2>Here You Can Make A Reservation Or Just walkin to our cafe</h2>
+                        <h6>Contactanos</h6>
+                        <h2>Aqui puedes hacer una reservacionn ,valida hasta las 2 pm</h2>
                     </div>
                     <p>Donec pretium est orci, non vulputate arcu hendrerit a. Fusce a eleifend riqsie, namei sollicitudin urna diam, sed commodo purus porta ut.</p>
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="phone">
                                 <i class="fa fa-phone"></i>
-                                <h4>Phone Numbers</h4>
-                                <span><a href="#">080-090-0990</a><br><a href="#">080-090-0880</a></span>
+                                <h4>Números de telefono</h4>
+                                <span><a href="#">966 570 181</a><br><a href="#"> 978 364 769</a></span>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="message">
                                 <i class="fa fa-envelope"></i>
                                 <h4>Emails</h4>
-                                <span><a href="#">hello@company.com</a><br><a href="#">info@company.com</a></span>
+                                <span><a href="#">lacasadelchef@company.com</a><br><a href="#">pattyq@hotmail.com</a></span>
                             </div>
                         </div>
                     </div>
@@ -375,7 +476,7 @@
                     <form id="contact" action="" method="post">
                       <div class="row">
                         <div class="col-lg-12">
-                            <h4>Table Reservation</h4>
+                            <h4>Reservación de una meza</h4>
                         </div>
                         <div class="col-lg-6 col-sm-12">
                           <fieldset>
@@ -395,7 +496,7 @@
                         <div class="col-md-6 col-sm-12">
                           <fieldset>
                             <select value="number-guests" name="number-guests" id="number-guests">
-                                <option value="number-guests">Number Of Guests</option>
+                                <option value="number-guests">Número de personas</option>
                                 <option name="1" id="1">1</option>
                                 <option name="2" id="2">2</option>
                                 <option name="3" id="3">3</option>
@@ -424,10 +525,10 @@
                         <div class="col-md-6 col-sm-12">
                           <fieldset>
                             <select value="time" name="time" id="time">
-                                <option value="time">Time</option>
-                                <option name="Breakfast" id="Breakfast">Breakfast</option>
-                                <option name="Lunch" id="Lunch">Lunch</option>
-                                <option name="Dinner" id="Dinner">Dinner</option>
+                                <option value="time">Platos</option>
+                                <option name="Breakfast" id="Breakfast">Desayuno</option>
+                                <option name="Lunch" id="Lunch">Almuerzo</option>
+                                <option name="Dinner" id="Dinner">Cena</option>
                             </select>
                           </fieldset>
                         </div>
@@ -438,7 +539,7 @@
                         </div>
                         <div class="col-lg-12">
                           <fieldset>
-                            <button type="submit" id="form-submit" class="main-button-icon">Make A Reservation</button>
+                            <button type="submit" id="form-submit" class="main-button-icon">Haz una reservación</button>
                           </fieldset>
                         </div>
                       </div>
@@ -456,8 +557,8 @@
         <div class="row">
             <div class="col-lg-4 offset-lg-4 text-center">
                 <div class="section-heading">
-                    <h6>Klassy Week</h6>
-                    <h2>This Week’s Special Meal Offers</h2>
+                    <h6>La Casa del Chef</h6>
+                    <h2>Mejores platos de la semana</h2>
                 </div>
             </div>
         </div>
@@ -469,9 +570,9 @@
                             <div class="row">
                                 <div class="col-lg-6 offset-lg-3">
                                     <ul>
-                                      <li><a href='#tabs-1'><img src="../assets/images/tab-icon-01.png" alt="">Breakfast</a></li>
-                                      <li><a href='#tabs-2'><img src="../assets/images/tab-icon-02.png" alt="">Lunch</a></li>
-                                      <li><a href='#tabs-3'><img src="../assets/images/tab-icon-03.png" alt="">Dinner</a></li>
+                                      <li><a href='#tabs-1'><img src="../assets/images/tab-icon-01.png" alt="">Desayuno</a></li>
+                                      <li><a href='#tabs-2'><img src="../assets/images/tab-icon-02.png" alt="">Almuerzo</a></li>
+                                      <li><a href='#tabs-3'><img src="../assets/images/tab-icon-03.png" alt="">Cena</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -487,30 +588,30 @@
                                                 <div class="col-lg-12">
                                                     <div class="tab-item">
                                                         <img src="../assets/images/tab-item-01.png" alt="">
-                                                        <h4>Fresh Chicken Salad</h4>
+                                                        <h4>La parrila del chef</h4>
                                                         <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                         <div class="price">
-                                                            <h6>$10.50</h6>
+                                                            <h6>59.00</h6>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-12">
                                                     <div class="tab-item">
                                                         <img src="../assets/images/tab-item-02.png" alt="">
-                                                        <h4>Orange Juice</h4>
+                                                        <h4>Arroz Chaufa </h4>
                                                         <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                         <div class="price">
-                                                            <h6>$8.50</h6>
+                                                            <h6>30</h6>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-12">
                                                     <div class="tab-item">
                                                         <img src="../assets/images/tab-item-03.png" alt="">
-                                                        <h4>Fruit Salad</h4>
+                                                        <h4>Salchipapa del chef</h4>
                                                         <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                         <div class="price">
-                                                            <h6>$9.90</h6>
+                                                            <h6>20</h6>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -523,30 +624,30 @@
                                                 <div class="col-lg-12">
                                                     <div class="tab-item">
                                                         <img src="../assets/images/tab-item-04.png" alt="">
-                                                        <h4>Eggs Omelette</h4>
+                                                        <h4>Chuleta de cerdo</h4>
                                                         <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                         <div class="price">
-                                                            <h6>$6.50</h6>
+                                                            <h6>45</h6>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-12">
                                                     <div class="tab-item">
                                                         <img src="../assets/images/tab-item-05.png" alt="">
-                                                        <h4>Dollma Pire</h4>
+                                                        <h4>Cuy chactado</h4>
                                                         <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                         <div class="price">
-                                                            <h6>$5.00</h6>
+                                                            <h6>37</h6>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-12">
                                                     <div class="tab-item">
                                                         <img src="../assets/images/tab-item-06.png" alt="">
-                                                        <h4>Omelette & Cheese</h4>
+                                                        <h4>Coctel orgasmo</h4>
                                                         <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                         <div class="price">
-                                                            <h6>$4.10</h6>
+                                                            <h6>21</h6>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -563,30 +664,30 @@
                                                 <div class="col-lg-12">
                                                     <div class="tab-item">
                                                         <img src="../assets/images/tab-item-04.png" alt="">
-                                                        <h4>Eggs Omelette</h4>
+                                                        <h4>h4</h4>
                                                         <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                         <div class="price">
-                                                            <h6>$14</h6>
+                                                            <h6>44</h6>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-12">
                                                     <div class="tab-item">
                                                         <img src="../assets/images/tab-item-05.png" alt="">
-                                                        <h4>Dollma Pire</h4>
+                                                        <h4>h4</h4>
                                                         <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                         <div class="price">
-                                                            <h6>$18</h6>
+                                                            <h6>18</h6>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-12">
                                                     <div class="tab-item">
                                                         <img src="../assets/images/tab-item-06.png" alt="">
-                                                        <h4>Omelette & Cheese</h4>
+                                                        <h4>h4</h4>
                                                         <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                         <div class="price">
-                                                            <h6>$22</h6>
+                                                            <h6>35</h6>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -599,30 +700,30 @@
                                                 <div class="col-lg-12">
                                                     <div class="tab-item">
                                                         <img src="../assets/images/tab-item-01.png" alt="">
-                                                        <h4>Fresh Chicken Salad</h4>
+                                                        <h4>h4</h4>
                                                         <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                         <div class="price">
-                                                            <h6>$10</h6>
+                                                            <h6>10</h6>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-12">
                                                     <div class="tab-item">
                                                         <img src="../assets/images/tab-item-02.png" alt="">
-                                                        <h4>Orange Juice</h4>
+                                                        <h4>h4</h4>
                                                         <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                         <div class="price">
-                                                            <h6>$20</h6>
+                                                            <h6>20</h6>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-12">
                                                     <div class="tab-item">
                                                         <img src="../assets/images/tab-item-03.png" alt="">
-                                                        <h4>Fruit Salad</h4>
+                                                        <h4>h4</h4>
                                                         <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                         <div class="price">
-                                                            <h6>$30</h6>
+                                                            <h6>30</h6>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -639,30 +740,30 @@
                                                 <div class="col-lg-12">
                                                     <div class="tab-item">
                                                         <img src="../assets/images/tab-item-05.png" alt="">
-                                                        <h4>Eggs Omelette</h4>
+                                                        <h4>h4</h4>
                                                         <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                         <div class="price">
-                                                            <h6>$14</h6>
+                                                            <h6>14</h6>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-12">
                                                     <div class="tab-item">
                                                         <img src="../assets/images/tab-item-03.png" alt="">
-                                                        <h4>Orange Juice</h4>
+                                                        <h4>h4</h4>
                                                         <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                         <div class="price">
-                                                            <h6>$18</h6>
+                                                            <h6>28</h6>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-12">
                                                     <div class="tab-item">
                                                         <img src="../assets/images/tab-item-02.png" alt="">
-                                                        <h4>Fruit Salad</h4>
+                                                        <h4>h4</h4>
                                                         <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                         <div class="price">
-                                                            <h6>$10</h6>
+                                                            <h6>18</h6>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -675,30 +776,30 @@
                                                 <div class="col-lg-12">
                                                     <div class="tab-item">
                                                         <img src="../assets/images/tab-item-06.png" alt="">
-                                                        <h4>Fresh Chicken Salad</h4>
+                                                        <h4>h4</h4>
                                                         <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                         <div class="price">
-                                                            <h6>$8.50</h6>
+                                                            <h6>8.50</h6>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-12">
                                                     <div class="tab-item">
                                                         <img src="../assets/images/tab-item-01.png" alt="">
-                                                        <h4>Dollma Pire</h4>
+                                                        <h4>h4</h4>
                                                         <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                         <div class="price">
-                                                            <h6>$9</h6>
+                                                            <h6>45</h6>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-12">
                                                     <div class="tab-item">
                                                         <img src="../assets/images/tab-item-04.png" alt="">
-                                                        <h4>Omelette & Cheese</h4>
+                                                        <h4>h4</h4>
                                                         <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
                                                         <div class="price">
-                                                            <h6>$11</h6>
+                                                            <h6>21</h6>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -739,7 +840,7 @@
                 <div class="left-text-content">
                     <p>© Copyright La Casa del Chef.
                     
-                    <br>Design: TemplateMo</p>
+                    <br>Design: Antony-beep</p>
                 </div>
             </div>
         </div>
